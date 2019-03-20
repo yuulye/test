@@ -20,7 +20,8 @@
 if (file_exists(basename(__FILE__, '.php').'-config.php')) {
   define('CONFIG_FILE', basename(__FILE__, '.php').'-config.php');
   require_once CONFIG_FILE;
-} else {
+} 
+else {
   define('CONFIG_FILE', __FILE__);
 }
 
